@@ -1,0 +1,186 @@
+/* ---------------------------------------------------
+------------------------------------------------------
+PAGE LAYOUT - CONSISTENT THROUGH ALL PAGES 
+------------------------------------------------------
+----------------------------------------------------*/
+
+@media (min-width: 800px) {
+    .content-wrapper {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr; 
+        grid-template-areas: "banner banner" "nav nav" "aside main" "footer footer";
+    }
+
+    .banner {
+        grid-area: banner;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+/* End of page layout */ 
+
+body {
+    line-height: 1.6em;
+    font-family: sans-serif;
+}
+
+/* ON THE NAV BAR --- BACKGROUND IMAGE = GRADIENT BETWEEN TEAL #1CF5D0 AND LIGHT PURPLE #CD9FFF */
+
+/* ---------------------------------------------------
+------------------------------------------------------
+PAGE ONE STYLING 
+------------------------------------------------------
+----------------------------------------------------*/
+
+.banner {
+    background-color:   #ccccff;
+    padding: 3em;
+    line-height: 2.2em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* nav bar layout */ 
+
+nav {
+    background-image: url(../images/finalgradient.png);
+}
+
+/* COLORS FOR THE IMAGE GRADIENT: 
+    green: #8CFFEC
+    blue: #A0BEF0
+    purple: #CD9FFF
+*/ 
+ 
+nav ul {
+    list-style-type: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  nav li a:hover {
+    background-color: #b174f1;
+    color: white;
+  }
+
+  /* end of nav bar layout */ 
+
+aside {
+    background-color: #97b9ff;
+    padding: 3em;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: #c3e1ff;
+    padding: 3em;
+    font-family: sans-serif;
+}
+
+.sadielibrary {
+    width: 400px;
+    height: auto;
+    display: block;
+    align-content: center;
+}
+
+footer {
+    background-color:  #ccccff;
+    padding: 3em;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* END OF PAGE 1 STYLING */ 
+
+/* ---------------------------------------------------
+------------------------------------------------------
+PAGE TWO STYLING 
+------------------------------------------------------
+----------------------------------------------------*/
+.box {
+    display: block;
+    padding: 10px;
+    background-color: #7cacff;
+}
+
+/* ---------------------------------------------------
+------------------------------------------------------
+HACKER PAGE STYLING 
+------------------------------------------------------
+----------------------------------------------------*/
+.hackerhead {
+    padding: 3em;
+}
+.hackerpage {
+    background-color: #A0BEF0;
+}
+.hackertitle {
+    text-align: center;
+}
+
+.hackerpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+}
+
+/* ---------------------------------------------------
+------------------------------------------------------
+COMP D PAGE STYLING 
+------------------------------------------------------
+----------------------------------------------------*/
+.titlegrid {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 300px 300px 300px;
+    overflow: auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 20px;
+}
+ 
+.titlegrid img {
+    width: 225px;
+    height: auto;
+    align-content: center;
+}
+
+.instagrid > div {
+    text-align: center;
+    padding: 20px;
+}
